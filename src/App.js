@@ -35,7 +35,7 @@ export default function App() {
           />
           <Route
             path="/footer"
-            component={() => <ShoppingCart cart={contacto} />}
+            component={() => <ShoppingCart cart={cart} />}
           />
         </Switch>
       </div>
