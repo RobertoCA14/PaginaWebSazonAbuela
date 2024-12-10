@@ -10,7 +10,7 @@ function Header() {
     <header className="sticky top-0 z-50">
       {/* Barra superior */}
       <div className="bg-red-800 text-sm text-center py-1 text-white">
-        INGREDIENTES SIEMPRE FRESCOS... DIRECTO DESDE EL CAMPO!
+        “EL SAZON DE LA ABUELA 100% NATURAL”... DIRECTO DESDE EL CAMPO!
       </div>
 
       {/* Contenedor principal del header */}
@@ -22,7 +22,7 @@ function Header() {
         >
           <img src={logo1} alt="Logo" className="w-16 h-auto object-contain" />
           <div className="flex flex-col text-center md:text-left">
-            <h1 className="text-lg font-bold">Sazon Criolla</h1>
+            <h1 className="text-lg font-bold">EL SAZON DE LA ABUELA</h1>
             <span className="text-xs">
               Al servicio de <strong>tu</strong> gusto.
             </span>
