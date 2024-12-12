@@ -1,8 +1,33 @@
-// ShoppingCart.js
-import React from "react";
+import React, { useEffect } from "react";
 
 function ShoppingCart({ cart }) {
   const total = cart.reduce((acc, product) => acc + product.price, 0);
+
+  useEffect(() => {
+    if (window.paypal) {
+      window.paypal.Buttons({
+        createOrder: (data, actions) => {
+          return actions.order.create({
+            purchase_units: [
+              {
+                amount: {
+                  value: total.toFixed(2), // Total del carrito
+                },
+              },
+            ],
+          });
+        },
+        onApprove: (data, actions) => {
+          return actions.order.capture().then((details) => {
+            alert(`Gracias por tu compra, ${details.payer.name.given_name}!`);
+          });
+        },
+        onError: (err) => {
+          console.error("Error en el pago:", err);
+        },
+      }).render("#paypal-button-container");
+    }
+  }, [total]);
 
   return (
     <div className="shopping-cart p-8">
@@ -21,7 +46,8 @@ function ShoppingCart({ cart }) {
           </li>
         ))}
       </ul>
-      <p className="font-bold">Total: ${total}</p>
+      <p className="font-bold">Total: ${total.toFixed(2)}</p>
+      <div id="paypal-button-container" className="mt-4"></div>
     </div>
   );
 }
