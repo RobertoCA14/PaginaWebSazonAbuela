@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-function ShoppingCart({ cart }) {
+function ShoppingCart({ cart, removeFromCart }) {
   const total = cart.reduce((acc, product) => acc + product.price, 0);
 
   useEffect(() => {
@@ -42,9 +42,15 @@ function ShoppingCart({ cart }) {
               alt={item.name}
               className="w-32 h-32 object-cover rounded mr-4"
             />
-            <span>
-              {item.name} - ${item.price}
+            <span className="flex-1">
+              {item.name} - ${item.price.toFixed(2)}
             </span>
+            <button
+              className="bg-red-500 text-white px-4 py-2 rounded"
+              onClick={() => removeFromCart(item.id)}
+            >
+              Eliminar
+            </button>
           </li>
         ))}
       </ul>

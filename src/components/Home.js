@@ -1,7 +1,7 @@
 // HomePage.js
 import React from "react";
 import Carousel from "./Carousel";
-import Logoverde from "../assets/Logoverde.png";
+import productofinal from "../assets/productofinal.png";
 import Fotosingredientes from "../assets/Fotosingredientes.png";
 import LogoSazonAbuela from "../assets/LogoSazonAbuela.png";
 
@@ -176,7 +176,7 @@ function HomePage() {
           <div className="bg-white p-4 rounded shadow-lg text-center">
             <div className="text-center">
               <img
-                src={Logoverde}
+                src={productofinal}
                 alt="Beneficios del sazón natural"
                 className="mx-auto rounded-lg shadow-md w-full max-w-md"
               />

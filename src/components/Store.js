@@ -1,19 +1,19 @@
 import React from "react";
-import producto1 from "../assets/producto1.webp";
-import producto2 from "../assets/producto2.webp";
+import verimg from "../assets/verimg.png";
+import hhhimg from "../assets/hhhimg.png";
 
 const products = [
   {
     id: 1,
     name: "El Sazón de la Abuela, 12 oz, Ref.772",
     price: 13.8,
-    image: producto1,
+    image: verimg,
   },
   {
     id: 2,
     name: "El Sazón de la Abuela, 24 oz, Ref.7302",
     price: 17.4,
-    image: producto2,
+    image: hhhimg,
   },
 ];
 

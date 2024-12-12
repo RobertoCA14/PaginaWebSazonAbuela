@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import producto1 from "../assets/producto1.webp";
-import producto2 from "../assets/producto2.webp";
-import producto3 from "../assets/producto3.webp";
+import hhhimg from "../assets/hhhimg.png";
+import verimg from "../assets/verimg.png";
+
 import ImgPortada from "../assets/ImgPortada.webp";
 
 function ProductCarousel() {
@@ -53,7 +53,7 @@ function ProductCarousel() {
         <div
           className="relative bg-cover bg-center text-white"
           style={{
-            backgroundImage: `url(${producto1})`,
+            backgroundImage: `url(${hhhimg})`,
             height: "70vh",
           }}
         >
@@ -65,7 +65,7 @@ function ProductCarousel() {
         <div
           className="relative bg-cover bg-center text-white"
           style={{
-            backgroundImage: `url(${producto2})`,
+            backgroundImage: `url(${ImgPortada})`,
             height: "70vh",
           }}
         >
@@ -77,7 +77,7 @@ function ProductCarousel() {
         <div
           className="relative bg-cover bg-center text-white"
           style={{
-            backgroundImage: `url(${producto3})`,
+            backgroundImage: `url(${verimg})`,
             height: "70vh",
           }}
         >
