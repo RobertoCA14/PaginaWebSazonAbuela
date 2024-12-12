@@ -28,22 +28,22 @@ function Footer() {
               </a>
             </li>
             <li>
-              <a href="/#nosotro" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Quiénes Somos
               </a>
             </li>
             <li>
-              <a href="/products" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Productos
               </a>
             </li>
             <li>
-              <a href="/recipes" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Recetas
               </a>
             </li>
             <li>
-              <a href="/#contacto" className="hover:underline">
+              <a href="/" className="hover:underline">
                 Contacto
               </a>
             </li>

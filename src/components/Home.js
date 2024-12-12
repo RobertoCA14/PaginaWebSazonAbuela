@@ -1,7 +1,7 @@
 // HomePage.js
 import React from "react";
 import Carousel from "./Carousel";
-import logo1 from "../assets/logo1.png";
+import Logoverde from "../assets/Logoverde.png";
 import Fotosingredientes from "../assets/Fotosingredientes.png";
 import LogoSazonAbuela from "../assets/LogoSazonAbuela.png";
 
@@ -87,7 +87,10 @@ function HomePage() {
         </div>
 
         {/* Características del producto */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+        <div
+          id="Ingredientes"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4"
+        >
           <div className="bg-gradient-to-r from-green-200 via-yellow-200 to-red-200 p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-extrabold mb-4 text-green-700 text-center">
               Ingredientes Naturales del "Sazón de la Abuela"
@@ -173,7 +176,7 @@ function HomePage() {
           <div className="bg-white p-4 rounded shadow-lg text-center">
             <div className="text-center">
               <img
-                src={LogoSazonAbuela}
+                src={Logoverde}
                 alt="Beneficios del sazón natural"
                 className="mx-auto rounded-lg shadow-md w-full max-w-md"
               />
