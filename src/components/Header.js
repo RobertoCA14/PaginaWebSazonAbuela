@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaBars } from "react-icons/fa";
 import logo1 from "../assets/logo1.png";
+import LogoSazonAbuela from "../assets/LogoSazonAbuela.png";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,11 @@ function Header() {
           className="flex items-center space-x-4"
           onClick={() => (window.location.href = "/")}
         >
-          <img src={logo1} alt="Logo" className="w-16 h-auto object-contain" />
+          <img
+            src={LogoSazonAbuela}
+            alt="Logo"
+            className="w-16 h-auto object-contain"
+          />
           <div className="flex flex-col text-center md:text-left">
             <h1 className="text-lg font-bold">EL SAZON DE LA ABUELA</h1>
             <span className="text-xs">

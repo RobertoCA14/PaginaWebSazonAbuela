@@ -58,7 +58,7 @@ function ProductCarousel() {
           }}
         >
           <div className="absolute inset-0 flex flex-col items-center justify-center text-center space-y-4">
-            <h2 className="text-4xl font-bold">Sazón Fusion Criolla</h2>
+            <h2 className="text-4xl font-bold">EL Sazon de la Abuela</h2>
             <p>El toque perfecto para cada platillo.</p>
           </div>
         </div>

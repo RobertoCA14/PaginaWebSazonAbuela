@@ -170,7 +170,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="bg-gray-300 p-4 rounded shadow-lg text-center">
+          <div className="bg-white p-4 rounded shadow-lg text-center">
             <div className="text-center">
               <img
                 src={LogoSazonAbuela}
@@ -178,11 +178,13 @@ function HomePage() {
                 className="mx-auto rounded-lg shadow-md w-full max-w-md"
               />
             </div>
+          </div>
+          <div className="bg-gray-300 p-4 rounded shadow-lg text-center">
             <h3 className="text-xl font-bold mb-2">
               UN SAZON 100% NATURAL SIN ADICTIVOS
             </h3>
             <p>
-              USO Y APLICACIONES Descubre la versatilidad de nuestra sazón
+              USO Y APLICACIONES: Descubre la versatilidad de nuestra sazón
               líquida, el toque secreto para realzar cualquier platillo.
               Perfecto para marinadas y adobos, es la base ideal para salsas,
               guisos y mucho más. Añade una explosión de sabor a tus ensaladas,
@@ -224,7 +226,7 @@ function HomePage() {
           onClick={() => (window.location.href = "/store")}
           className="bg-red-500 text-white px-6 py-3 rounded transform hover:scale-105 transition duration-300"
         >
-          Adquiere Sazón Fusion Criolla
+          Adquiere El Sazon de la Abuela aqui
         </button>
       </section>
     </div>
