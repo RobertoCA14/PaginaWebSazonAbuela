@@ -1,5 +1,7 @@
 // Footer.js
 import React from "react";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -61,13 +63,17 @@ function Footer() {
           </p>
 
           <p className="flex items-center mb-2">
-            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> Santiago
-            de los Caballeros, Rep. Dom.
+            <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-2" /> San
+            Cristobal, Rep. Dom.
           </p>
 
           <p className="flex items-center">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />{" "}
             ELSazonDelAbuela@gmail.com
+          </p>
+          <p className="flex items-center">
+            <FontAwesomeIcon icon={faPhone} className="mr-2" />
+            +1 809-779-7810
           </p>
         </div>
       </div>
