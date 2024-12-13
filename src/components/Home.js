@@ -11,7 +11,52 @@ function HomePage() {
     <div className="homepage">
       {/* Encabezado visual con imagen de fondo */}
       <Carousel />
-
+      {/* Imagen de logo debajo de la sección roja */}
+      <div className="text-center p-8">
+        <img
+          src={LogoSazonAbuela}
+          alt="Imagen de Sazón Criollo"
+          className="mx-auto mb-4 w-full max-w-lg h-auto object-cover rounded-lg"
+        />
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-green-600">
+              Saludable
+            </h3>
+            <p>
+              Elaborado sin conservantes ni aditivos artificiales, garantizando
+              un producto limpio y natural. Ideal para quienes buscan cuidar su
+              bienestar y disfrutar de alimentos más frescos y puros.
+            </p>
+          </div>
+        </div>
+        {/* Conveniente */}
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-600">
+              Conveniente
+            </h3>
+            <p>
+              Su diseño práctico lo hace fácil de usar y almacenar, ahorrándote
+              tiempo en la cocina. Perfecto para personas con un estilo de vida
+              ajetreado que buscan soluciones rápidas sin sacrificar calidad.
+            </p>
+          </div>
+        </div>
+        {/* Delicioso */}
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-red-600">
+              Delicioso
+            </h3>
+            <p>
+              Resalta y potencia el sabor natural de tus ingredientes,
+              transformando cualquier receta en una experiencia gourmet. Ideal
+              para elevar el nivel de tus platillos favoritos.
+            </p>
+          </div>
+        </div>
+      </div>
       {/* Sección de características */}
       <section className="features text-center mb-4">
         {/* Sección completa en rojo */}
@@ -44,48 +89,6 @@ function HomePage() {
             </button>
           </div>
         </div>
-
-        {/* Imagen de logo debajo de la sección roja */}
-        <div className="text-center p-8">
-          <img
-            src={LogoSazonAbuela}
-            alt="Imagen de Sazón Criollo"
-            className="mx-auto mb-4 w-full max-w-lg h-auto object-cover rounded-lg"
-          />
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-4 text-green-600">
-              Saludable
-            </h3>
-            <p>
-              Elaborado sin conservantes ni aditivos artificiales, garantizando
-              un producto limpio y natural. Ideal para quienes buscan cuidar su
-              bienestar y disfrutar de alimentos más frescos y puros.
-            </p>
-          </div>
-          {/* Conveniente */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-4 text-blue-600">
-              Conveniente
-            </h3>
-            <p>
-              Su diseño práctico lo hace fácil de usar y almacenar, ahorrándote
-              tiempo en la cocina. Perfecto para personas con un estilo de vida
-              ajetreado que buscan soluciones rápidas sin sacrificar calidad.
-            </p>
-          </div>
-          {/* Delicioso */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-4 text-red-600">
-              Delicioso
-            </h3>
-            <p>
-              Resalta y potencia el sabor natural de tus ingredientes,
-              transformando cualquier receta en una experiencia gourmet. Ideal
-              para elevar el nivel de tus platillos favoritos.
-            </p>
-          </div>
-        </div>
-
         {/* Características del producto */}
         <div
           id="Ingredientes"
