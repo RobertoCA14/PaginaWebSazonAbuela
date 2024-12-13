@@ -120,7 +120,7 @@ function Footer() {
 
       {/* Derechos Reservados */}
       <div className="text-center text-sm text-gray-200 mt-4">
-        © 2024 Sazon Criolla, Todos los derechos reservados.
+        © 2024 El Sazon de la Abuela, Todos los derechos reservados.
       </div>
     </footer>
   );

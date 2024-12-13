@@ -6,14 +6,14 @@ const products = [
   {
     id: 1,
     name: "El Sazón de la Abuela, 12 oz, Ref.772",
-    price: 13.8,
-    image: verimg,
+    price: 140,
+    image: producto1,
   },
   {
     id: 2,
     name: "El Sazón de la Abuela, 24 oz, Ref.7302",
-    price: 17.4,
-    image: hhhimg,
+    price: 180,
+    image: producto2,
   },
 ];
 
