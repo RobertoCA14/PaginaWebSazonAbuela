@@ -1,11 +1,11 @@
 // HomePage.js
 import React from "react";
 import Carousel from "./Carousel";
-import logo2 from "../assets/logo2.png";
 import logo1 from "../assets/logo1.png";
 import Fotosingredientes from "../assets/Fotosingredientes.png";
 import LogoSazonAbuela from "../assets/LogoSazonAbuela.png";
 
+import imagensalud2 from "../assets/imagensalud2.png";
 function HomePage() {
   return (
     <div className="homepage">
@@ -50,51 +50,146 @@ function HomePage() {
           <img
             src={LogoSazonAbuela}
             alt="Imagen de Sazón Criollo"
-            className="mx-auto mb-1 w-64 h-36 object-cover rounded"
+            className="mx-auto mb-4 w-full max-w-lg h-auto object-cover rounded-lg"
           />
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-green-600">
+              Saludable
+            </h3>
+            <p>
+              Elaborado sin conservantes ni aditivos artificiales, garantizando
+              un producto limpio y natural. Ideal para quienes buscan cuidar su
+              bienestar y disfrutar de alimentos más frescos y puros.
+            </p>
+          </div>
+          {/* Conveniente */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-600">
+              Conveniente
+            </h3>
+            <p>
+              Su diseño práctico lo hace fácil de usar y almacenar, ahorrándote
+              tiempo en la cocina. Perfecto para personas con un estilo de vida
+              ajetreado que buscan soluciones rápidas sin sacrificar calidad.
+            </p>
+          </div>
+          {/* Delicioso */}
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-red-600">
+              Delicioso
+            </h3>
+            <p>
+              Resalta y potencia el sabor natural de tus ingredientes,
+              transformando cualquier receta en una experiencia gourmet. Ideal
+              para elevar el nivel de tus platillos favoritos.
+            </p>
+          </div>
         </div>
 
         {/* Características del producto */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
-          <div className="bg-gray-300 p-4 rounded shadow-lg text-center">
-            <h3 className="text-xl font-bold mb-2">
-              Ingredientes Naturales del "Sazon de la Abuela"
+          <div className="bg-gradient-to-r from-green-200 via-yellow-200 to-red-200 p-8 rounded-lg shadow-lg">
+            <h3 className="text-2xl font-extrabold mb-4 text-green-700 text-center">
+              Ingredientes Naturales del "Sazón de la Abuela"
             </h3>
-            <p>
-              <p>
-                verduras, aji cubanela, aji morron, apio, oregano, aji gustoso,
-                ajo, aceite, verde, agua, sal, cilatro, pimienta.
-              </p>
-            </p>
-            <div className="text-center p-8">
+            <div className="text-center mb-6">
               <img
                 src={Fotosingredientes}
                 alt="Imagen de Sazón Criollo"
-                className="mx-auto mb-4 w-full max-w-lg h-auto object-cover rounded-lg"
+                className="mx-auto w-full max-w-md h-auto object-cover rounded-lg border-4 border-green-700"
               />
+            </div>
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <p className="text-lg text-gray-800 font-medium">
+                Verduras frescas como ají cubanela, ají morrón, apio, orégano,
+                ají gustoso, ajo, aceite verde, agua, sal, cilantro, y pimienta.
+                Cada ingrediente ha sido seleccionado cuidadosamente para
+                ofrecerte el mejor sabor.
+              </p>
+            </div>
+            <div className="mt-6 flex justify-center">
+              <button className="bg-green-700 text-white px-6 py-3 rounded-full font-bold hover:bg-green-800 transition">
+                ¡Descubre más!
+              </button>
             </div>
           </div>
 
-          <div className="bg-gray-300 p-4 rounded shadow-lg text-center">
-            <div
-              className="w-full h-32 bg-cover bg-center rounded-lg mb-4"
-              style={{
-                backgroundImage: `url(${logo1})`,
-              }}
-            ></div>
-            <h3 className="text-xl font-bold mb-2">Auténtico Sabor</h3>
-            <p>Inspirado en la esencia de la cocina criolla.</p>
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            {/* Encabezado */}
+            <h2 className="text-3xl font-bold text-green-700 text-center mb-6">
+              Beneficios del Sazón Natural
+            </h2>
+
+            {/* Imagen representativa */}
+            <div className="text-center">
+              <img
+                src={imagensalud2}
+                alt="Beneficios del sazón natural"
+                className="mx-auto rounded-lg shadow-md w-full max-w-md"
+              />
+            </div>
+
+            {/* Beneficios en un diseño atractivo */}
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+              {[
+                {
+                  title: "Prevención de enfermedades",
+                  text: "Una alimentación rica en nutrientes naturales puede prevenir enfermedades crónicas como la diabetes, enfermedades cardiovasculares y ciertos tipos de cáncer.",
+                },
+                {
+                  title: "Fortalecimiento del sistema inmunológico",
+                  text: "Los antioxidantes presentes en los vegetales protegen nuestras células del daño causado por los radicales libres.",
+                },
+                {
+                  title: "Mayor contenido nutricional",
+                  text: "Los sazones naturales conservan una mayor cantidad de vitaminas, minerales y antioxidantes, esenciales para nuestro bienestar.",
+                },
+                {
+                  title: "Sin aditivos",
+                  text: "Al evitar conservantes y colorantes artificiales, reducimos la ingesta de sustancias que pueden ser perjudiciales a largo plazo.",
+                },
+                {
+                  title: "Mejor digestión",
+                  text: "Los alimentos naturales suelen ser más fáciles de digerir, contribuyendo a una mejor salud intestinal.",
+                },
+                {
+                  title: "Menor riesgo de alergias",
+                  text: "Conociendo los ingredientes exactos, evitamos productos que contengan alérgenos comunes.",
+                },
+              ].map((benefit, index) => (
+                <div
+                  key={index}
+                  className="bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-lg transition-shadow"
+                >
+                  <h3 className="text-xl font-bold text-red-600 mb-2">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-700">{benefit.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
+          <div className="bg-white p-4 rounded shadow-lg text-center">
+            <div className="text-center">
+              <img
+                src={LogoSazonAbuela}
+                alt="Beneficios del sazón natural"
+                className="mx-auto rounded-lg shadow-md w-full max-w-md"
+              />
+            </div>
+          </div>
           <div className="bg-gray-300 p-4 rounded shadow-lg text-center">
-            <div
-              className="w-full h-32 bg-cover bg-center rounded-lg mb-4"
-              style={{
-                backgroundImage: `url(${logo1})`,
-              }}
-            ></div>
-            <h3 className="text-xl font-bold mb-2">Fácil y Versátil</h3>
-            <p>Perfecto para todo tipo de platos.</p>
+            <h3 className="text-xl font-bold mb-2">
+              UN SAZON 100% NATURAL SIN ADICTIVOS
+            </h3>
+            <p>
+              USO Y APLICACIONES: Descubre la versatilidad de nuestra sazón
+              líquida, el toque secreto para realzar cualquier platillo.
+              Perfecto para marinadas y adobos, es la base ideal para salsas,
+              guisos y mucho más. Añade una explosión de sabor a tus ensaladas,
+              carnes, pescados o vegetales con solo unos simples pasos.
+            </p>
           </div>
         </div>
       </section>
@@ -131,7 +226,7 @@ function HomePage() {
           onClick={() => (window.location.href = "/store")}
           className="bg-red-500 text-white px-6 py-3 rounded transform hover:scale-105 transition duration-300"
         >
-          Adquiere Sazón Fusion Criolla
+          Adquiere El Sazon de la Abuela aqui
         </button>
       </section>
     </div>

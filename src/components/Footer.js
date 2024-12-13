@@ -15,7 +15,7 @@ function Footer() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo o Nombre de la Compañía */}
         <div>
-          <h1 className="text-2xl font-bold mb-4">Fusion Criolla</h1>
+          <h1 className="text-2xl font-bold mb-4">El Sazon de la Abuela</h1>
         </div>
 
         {/* Menú */}
@@ -67,7 +67,7 @@ function Footer() {
 
           <p className="flex items-center">
             <FontAwesomeIcon icon={faEnvelope} className="mr-2" />{" "}
-            info@SazonCriolla.com
+            ELSazonDelAbuela@gmail.com
           </p>
         </div>
       </div>
