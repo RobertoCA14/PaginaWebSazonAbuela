@@ -52,37 +52,41 @@ function HomePage() {
             alt="Imagen de Sazón Criollo"
             className="mx-auto mb-4 w-full max-w-lg h-auto object-cover rounded-lg"
           />
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-4 text-green-600">
-              Saludable
-            </h3>
-            <p>
-              Elaborado sin conservantes ni aditivos artificiales, garantizando
-              un producto limpio y natural. Ideal para quienes buscan cuidar su
-              bienestar y disfrutar de alimentos más frescos y puros.
-            </p>
-          </div>
-          {/* Conveniente */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-4 text-blue-600">
-              Conveniente
-            </h3>
-            <p>
-              Su diseño práctico lo hace fácil de usar y almacenar, ahorrándote
-              tiempo en la cocina. Perfecto para personas con un estilo de vida
-              ajetreado que buscan soluciones rápidas sin sacrificar calidad.
-            </p>
-          </div>
-          {/* Delicioso */}
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h3 className="text-xl font-semibold mb-4 text-red-600">
-              Delicioso
-            </h3>
-            <p>
-              Resalta y potencia el sabor natural de tus ingredientes,
-              transformando cualquier receta en una experiencia gourmet. Ideal
-              para elevar el nivel de tus platillos favoritos.
-            </p>
+          <div id="nosotro" className="bg-red-700 text-white py-16">
+            
+              <h3 className="text-xl font-semibold mb-4 text-green-600">
+                Saludable
+              </h3>
+              <p>
+                Elaborado sin conservantes ni aditivos artificiales,
+                garantizando un producto limpio y natural. Ideal para quienes
+                buscan cuidar su bienestar y disfrutar de alimentos más frescos
+                y puros.
+              </p>
+            
+            {/* Conveniente */}
+            
+              <h3 className="text-xl font-semibold mb-4 text-blue-600">
+                Conveniente
+              </h3>
+              <p>
+                Su diseño práctico lo hace fácil de usar y almacenar,
+                ahorrándote tiempo en la cocina. Perfecto para personas con un
+                estilo de vida ajetreado que buscan soluciones rápidas sin
+                sacrificar calidad.
+              </p>
+            
+            {/* Delicioso */}
+            
+              <h3 className="text-xl font-semibold mb-4 text-red-600">
+                Delicioso
+              </h3>
+              <p>
+                Resalta y potencia el sabor natural de tus ingredientes,
+                transformando cualquier receta en una experiencia gourmet. Ideal
+                para elevar el nivel de tus platillos favoritos.
+              </p>
+            
           </div>
         </div>
 
@@ -114,7 +118,7 @@ function HomePage() {
             </div>
           </div>
 
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          
             {/* Encabezado */}
             <h2 className="text-3xl font-bold text-green-700 text-center mb-6">
               Beneficios del Sazón Natural
