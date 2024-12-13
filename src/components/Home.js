@@ -1,7 +1,7 @@
 // HomePage.js
 import React from "react";
 import Carousel from "./Carousel";
-import logo1 from "../assets/logo1.png";
+import productofinal from "../assets/productofinal.png";
 import Fotosingredientes from "../assets/Fotosingredientes.png";
 import LogoSazonAbuela from "../assets/LogoSazonAbuela.png";
 
@@ -11,7 +11,52 @@ function HomePage() {
     <div className="homepage">
       {/* Encabezado visual con imagen de fondo */}
       <Carousel />
-
+      {/* Imagen de logo debajo de la sección roja */}
+      <div className="text-center p-8">
+        <img
+          src={LogoSazonAbuela}
+          alt="Imagen de Sazón Criollo"
+          className="mx-auto mb-4 w-full max-w-lg h-auto object-cover rounded-lg"
+        />
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-green-600">
+              Saludable
+            </h3>
+            <p>
+              Elaborado sin conservantes ni aditivos artificiales, garantizando
+              un producto limpio y natural. Ideal para quienes buscan cuidar su
+              bienestar y disfrutar de alimentos más frescos y puros.
+            </p>
+          </div>
+        </div>
+        {/* Conveniente */}
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-blue-600">
+              Conveniente
+            </h3>
+            <p>
+              Su diseño práctico lo hace fácil de usar y almacenar, ahorrándote
+              tiempo en la cocina. Perfecto para personas con un estilo de vida
+              ajetreado que buscan soluciones rápidas sin sacrificar calidad.
+            </p>
+          </div>
+        </div>
+        {/* Delicioso */}
+        <div className="max-w-2xl mx-auto px-4">
+          <div className="bg-white p-6 rounded-lg shadow-lg">
+            <h3 className="text-xl font-semibold mb-4 text-red-600">
+              Delicioso
+            </h3>
+            <p>
+              Resalta y potencia el sabor natural de tus ingredientes,
+              transformando cualquier receta en una experiencia gourmet. Ideal
+              para elevar el nivel de tus platillos favoritos.
+            </p>
+          </div>
+        </div>
+      </div>
       {/* Sección de características */}
       <section className="features text-center mb-4">
         {/* Sección completa en rojo */}
@@ -44,54 +89,11 @@ function HomePage() {
             </button>
           </div>
         </div>
-
-        {/* Imagen de logo debajo de la sección roja */}
-        <div className="text-center p-8">
-          <img
-            src={LogoSazonAbuela}
-            alt="Imagen de Sazón Criollo"
-            className="mx-auto mb-4 w-full max-w-lg h-auto object-cover rounded-lg"
-          />
-          <div id="nosotro" className="bg-red-700 text-white py-16">
-            
-              <h3 className="text-xl font-semibold mb-4 text-green-600">
-                Saludable
-              </h3>
-              <p>
-                Elaborado sin conservantes ni aditivos artificiales,
-                garantizando un producto limpio y natural. Ideal para quienes
-                buscan cuidar su bienestar y disfrutar de alimentos más frescos
-                y puros.
-              </p>
-            
-            {/* Conveniente */}
-            
-              <h3 className="text-xl font-semibold mb-4 text-blue-600">
-                Conveniente
-              </h3>
-              <p>
-                Su diseño práctico lo hace fácil de usar y almacenar,
-                ahorrándote tiempo en la cocina. Perfecto para personas con un
-                estilo de vida ajetreado que buscan soluciones rápidas sin
-                sacrificar calidad.
-              </p>
-            
-            {/* Delicioso */}
-            
-              <h3 className="text-xl font-semibold mb-4 text-red-600">
-                Delicioso
-              </h3>
-              <p>
-                Resalta y potencia el sabor natural de tus ingredientes,
-                transformando cualquier receta en una experiencia gourmet. Ideal
-                para elevar el nivel de tus platillos favoritos.
-              </p>
-            
-          </div>
-        </div>
-
         {/* Características del producto */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+        <div
+          id="Ingredientes"
+          className="grid grid-cols-1 md:grid-cols-3 gap-6 px-4"
+        >
           <div className="bg-gradient-to-r from-green-200 via-yellow-200 to-red-200 p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-extrabold mb-4 text-green-700 text-center">
               Ingredientes Naturales del "Sazón de la Abuela"
@@ -118,7 +120,7 @@ function HomePage() {
             </div>
           </div>
 
-          
+          <div className="bg-white p-6 rounded-lg shadow-lg">
             {/* Encabezado */}
             <h2 className="text-3xl font-bold text-green-700 text-center mb-6">
               Beneficios del Sazón Natural
@@ -177,7 +179,7 @@ function HomePage() {
           <div className="bg-white p-4 rounded shadow-lg text-center">
             <div className="text-center">
               <img
-                src={LogoSazonAbuela}
+                src={productofinal}
                 alt="Beneficios del sazón natural"
                 className="mx-auto rounded-lg shadow-md w-full max-w-md"
               />

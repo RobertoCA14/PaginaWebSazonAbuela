@@ -11,7 +11,7 @@ function Header() {
     <header className="sticky top-0 z-50">
       {/* Barra superior */}
       <div className="bg-red-800 text-sm text-center py-1 text-white">
-        “EL SAZON DE LA ABUELA 100% NATURAL”... DIRECTO DESDE EL CAMPO!
+        “EL SAZON DE LA ABUELA 100% NATURAL”...
       </div>
 
       {/* Contenedor principal del header */}

@@ -1,31 +1,33 @@
 import React, { useEffect } from "react";
 
-function ShoppingCart({ cart }) {
+function ShoppingCart({ cart, removeFromCart }) {
   const total = cart.reduce((acc, product) => acc + product.price, 0);
 
   useEffect(() => {
     if (window.paypal) {
-      window.paypal.Buttons({
-        createOrder: (data, actions) => {
-          return actions.order.create({
-            purchase_units: [
-              {
-                amount: {
-                  value: total.toFixed(2), // Total del carrito
+      window.paypal
+        .Buttons({
+          createOrder: (data, actions) => {
+            return actions.order.create({
+              purchase_units: [
+                {
+                  amount: {
+                    value: total.toFixed(2), // Total del carrito
+                  },
                 },
-              },
-            ],
-          });
-        },
-        onApprove: (data, actions) => {
-          return actions.order.capture().then((details) => {
-            alert(`Gracias por tu compra, ${details.payer.name.given_name}!`);
-          });
-        },
-        onError: (err) => {
-          console.error("Error en el pago:", err);
-        },
-      }).render("#paypal-button-container");
+              ],
+            });
+          },
+          onApprove: (data, actions) => {
+            return actions.order.capture().then((details) => {
+              alert(`Gracias por tu compra, ${details.payer.name.given_name}!`);
+            });
+          },
+          onError: (err) => {
+            console.error("Error en el pago:", err);
+          },
+        })
+        .render("#paypal-button-container");
     }
   }, [total]);
 
@@ -40,9 +42,15 @@ function ShoppingCart({ cart }) {
               alt={item.name}
               className="w-32 h-32 object-cover rounded mr-4"
             />
-            <span>
-              {item.name} - ${item.price}
+            <span className="flex-1">
+              {item.name} - ${item.price.toFixed(2)}
             </span>
+            <button
+              className="bg-red-500 text-white px-4 py-2 rounded"
+              onClick={() => removeFromCart(item.id)}
+            >
+              Eliminar
+            </button>
           </li>
         ))}
       </ul>

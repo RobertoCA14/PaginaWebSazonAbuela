@@ -1,20 +1,19 @@
 import React from "react";
-import producto1 from "../assets/producto1.webp";
-import producto2 from "../assets/producto2.webp";
-import producto3 from "../assets/producto3.webp";
+import verimg from "../assets/verimg.png";
+import hhhimg from "../assets/hhhimg.png";
 
 const products = [
   {
     id: 1,
     name: "El Sazón de la Abuela, 12 oz, Ref.772",
     price: 140,
-    image: producto1,
+    image: verimg,
   },
   {
     id: 2,
     name: "El Sazón de la Abuela, 24 oz, Ref.7302",
     price: 180,
-    image: producto2,
+    image: hhhimg,
   },
 ];
 
@@ -22,7 +21,7 @@ function Store({ addToCart }) {
   return (
     <div className="store p-8">
       <h2 className="text-2xl mb-4">Nuestros Productos</h2>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {products.map((product) => (
           <div key={product.id} className="p-4 border rounded shadow">
             <img
